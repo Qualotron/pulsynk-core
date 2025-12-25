@@ -4,3 +4,4 @@ port = 8080
 
 [log]
 loglevel = "Info"
+filename = "pulsynk.log"

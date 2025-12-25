@@ -7,7 +7,7 @@ if __name__ == '__main__':
     hub_settings = load_config("../config/hub_settings.toml")
     print(hub_settings.get('network.port'))
     # Configure Logging and Start
-    setup_logging(hub_settings.get('log.loglevel'))
+    setup_logging(hub_settings.get('log.loglevel'), hub_settings.get('log.filename'))
     logger = logging.getLogger(__name__)
     logger.info("Station started")
 

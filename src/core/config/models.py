@@ -8,6 +8,7 @@ class NetworkConfig(BaseModel):
 
 class LogConfig(BaseModel):
     loglevel: str = Field(..., description="Logging Level")
+    filename: str = Field(..., description="Path and Filename of logfile")
 
 
 class ConfigModel(BaseModel):
