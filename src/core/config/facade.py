@@ -6,6 +6,10 @@ class Config:
         self._model = model
 
     @property
+    def general(self):
+        return self._model.general
+
+    @property
     def network(self):
         return self._model.network
 

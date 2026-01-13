@@ -19,3 +19,4 @@ class SX126xDriver:
         )
 
         self.lora.begin()
+        
