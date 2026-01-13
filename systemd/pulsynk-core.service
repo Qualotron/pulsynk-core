@@ -1,0 +1,17 @@
+[Unit]
+Description=Pulsynk-Core Service
+After=network.target
+
+[Service]
+ExecStart=/etc/pulsynk-core/venv/bin/python3 /etc/pulsynk-core/src/main.py
+WorkingDirectory=/etc/pulsynk-core
+User=pulsynk-core
+Group=pulsynk-core
+Restart=on-failure
+StandardOutput=journal
+StandardError=journal
+ProtectSystem=yes
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=multi-user.target
