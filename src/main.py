@@ -2,6 +2,8 @@ from core.config import load_config
 from core.logging import setup_logging
 import logging
 
+AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE
+
 if __name__ == '__main__':
     # Import hub-settings.toml config file
     hub_settings = load_config("/etc/pulsynk-core/config/hub_settings.toml")
